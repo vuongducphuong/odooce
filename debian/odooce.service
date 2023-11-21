@@ -1,0 +1,10 @@
+[Unit]
+   Description=odooce
+   Documentation=http://www.clouderp.vn
+   [Service]
+   # Ubuntu/Debian convention:
+   Type=simple
+   User=admin
+   ExecStart=/opt/admin/odooce/odoo-bin -c /etc/odooce.conf
+   [Install]
+   WantedBy=default.target
